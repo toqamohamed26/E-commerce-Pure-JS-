@@ -223,10 +223,12 @@ i:hover {
   color: #c4ac8e;
 }
 
-a {
+.text-dark{
   text-decoration: none;
 }
-
+.fab{
+  color: #040202;
+}
 #myBtn {
   display: none;
   position: fixed;

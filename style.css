@@ -1,0 +1,276 @@
+.collapse {
+  margin-left: 20%;
+}
+
+.cart {
+  margin-left: 25%;
+}
+
+.slider {
+  background-image: url(./images/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+nav {
+  padding-top: 10%;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+nav.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+ul {
+  font-size: 20px;
+}
+
+.active,
+.border-btn {
+  border-bottom: 2px solid rgb(3, 1, 1);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 17px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  background: #0b0b0b;
+  height: 1px;
+  transition: .3s ease-in-out;
+  left: 50%;
+
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+
+}
+
+.filter-btn {
+  position: relative;
+}
+
+.filter-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  background: #0b0b0b;
+  height: 1.5px;
+  transition: .5s ease-in-out;
+  left: 50%;
+}
+
+.filter-btn:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+
+.sec2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+img.makeup {
+  box-shadow: -15px -15px #c1b4a4;
+}
+
+img.makeup:hover {
+  box-shadow: 15px 15px #c1b4a4;
+}
+
+img.accssisories {
+  box-shadow: -15px -15px #c1b4a4;
+}
+
+
+img.accssisories:hover {
+  box-shadow: 15px 15px #c1b4a4;
+}
+
+.img-bg {
+  background-image: url(./images/4.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  width: 100%;
+  height: 600px;
+}
+
+.about-img {
+  -webkit-box-shadow: 200px -4px 0px 40px #c1b4a4;
+  -moz-box-shadow: 200px -4px 0px 40px #c1b4a4;
+  box-shadow: 200px -4px 0px 40px #c1b4a4;
+}
+
+.Facial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.circle {
+  background: #c1b4a4;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+h5.card-title {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.contact-img {
+  background-image: url("./images/3.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  height: 550px;
+}
+
+h4,
+h3,
+button {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 3px;
+  text-transform: none;
+}
+.warning{
+  font-size: small;
+}
+#counter{
+  height: 16px;
+  width: 16px;
+  background-color: #bc5e19;
+  border-radius: 50%;
+  color: #fff;
+  font-size:12px;
+  padding-top: 3px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 60%;
+}
+.phones {
+  letter-spacing: 4px;
+  color: #040202;
+}
+
+.fa-phone,
+.fa-location-dot {
+  color: #bc5e19;
+}
+
+.numbers:hover {
+  color: #bc5e19;
+}
+
+i:hover {
+  color: #bc5e19;
+}
+
+.category {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+
+.shop {
+  width: 12%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  margin-left: 41%;
+}
+
+.btn-toolbar {
+  padding-top: 2%;
+  padding-left: 18%;
+}
+
+.card {
+  margin-right: 2%;
+  border: none;
+}
+
+.cart-icon {
+  color: #252d4479;
+}
+
+.cart-icon:hover {
+  color: #c4ac8e;
+}
+
+a {
+  text-decoration: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  text-transform: none;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 480px) {
+  .slider {
+    height: 200px;
+    width: 100%;
+  }
+
+  .contact-img {
+    height: 200px;
+  }
+
+  .img-bg {
+    height: 200px;
+    width: 100%;
+  }
+
+  .btn-toolbar {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .slider {
+    height: 320px;
+    width: 100%;
+  }
+}
+

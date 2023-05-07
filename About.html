@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c89f2275fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>About Page</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light ">
+        <div class="container-fluid ps-5">
+            <a class="navbar-brand pe-5 fs-4" href="#"> Store </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item  px-5">
+                        <a class="nav-link fs-6" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item  px-5">
+                        <a class="nav-link fs-6 active" href="./About.html">About</a>
+                    </li>
+
+                    <li class="nav-item  px-5">
+                        <a class="nav-link fs-6" href="./Contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item cart">
+                        <a class="nav-link ">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" class="btn btn-dark" title="Go to top">Top</button>
+
+    <div class="container">
+        <div class="row d-flex justify-content-between my-5">
+            <div class="col-lg-4 col-sm-12 pt-5 ps-5 ">
+                <h5>WELCOME</h5>
+                <h6 class="fs-1 Facial pt-3">Beauty ,Fashion & Skincare Studio in NYC</h6>
+                <p class="pt-3">Est sit amet facilisis magna etiam tempor. Condimentum lacinia quis vel eros donec ac
+                    odio. Id nibh
+                    tortor id aliquet lectus proin nibh nisl. Rutrum tellus pellentesque eu tincidunt tortor aliquam
+                    nulla.</p>
+                <button class="btn btn-dark text-center ms-lg-3 mt-4">Reed more </button>
+            </div>
+            <div class="col-lg-6 col-sm-12 mt-5">
+                <img class="img-fluid about-img" src="./images/skin.webp" width="60%">
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-3 my-3">
+                <div class="card ">
+                    <div class="card-body ps-3">
+                        <div class="circle text-center">
+                            <img class="pt-3 " src="./images/download.png" width="50%">
+                        </div>
+                        <h5 class="card-title pt-2">SKIN CARE</h5>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#" class="btn btn-light px-4 border-btn">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3">
+                <div class="card ">
+                    <div class="card-body ps-3">
+                        <div class="circle text-center">
+                            <img class="pt-3 " src="./images/beauty.png" width="50%">
+                        </div>
+                        <h5 class="card-title pt-2">New collection</h5>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#" class="btn btn-light px-4 border-btn">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3">
+                <div class="card ">
+                    <div class="card-body ps-3">
+                        <div class="circle text-center">
+                            <img class="pt-3 " src="./images/new.png" width="50%">
+                        </div>
+                        <h5 class="card-title pt-2">accsesories</h5>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#" class="btn btn-light px-4 border-btn">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3">
+                <div class="card ">
+                    <div class="card-body ps-3">
+                        <div class="circle text-center">
+                            <img class="pt-3 " src="./images/accsesories.png" width="50%">
+                        </div>
+                        <h5 class="card-title pt-2">Beauty</h5>
+                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur</p>
+                        <a href="#" class="btn btn-light px-4 border-btn">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start text-dark mt-5" style="background-color: #f1f1f1">
+        <section class="d-flex justify-content-center p-4 text-white" style="background-color: #f1f1f1">
+
+            <div>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">
+                            <img src="./images/new.png" alt="">
+                        </h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, omnis.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-dark">Makeup</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Skin Care</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Fashion</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Accessories</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="./index.html" class="text-dark">Home</a>
+                        </p>
+                        <p>
+                            <a href="./About.html" class="text-dark">About</a>
+                        </p>
+                        <p>
+                            <a href="./Contact.html" class="text-dark">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Help</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-dark" href=""> toqamohamed iti .Net </a>
+        </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

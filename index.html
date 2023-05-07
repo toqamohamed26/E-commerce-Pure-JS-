@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/c89f2275fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Home Page</title>
+</head>
+
+<body id="top">
+    <section class="slider img-fluid">
+        <button onclick="topFunction()" id="myBtn" class="btn btn-dark" title="Go to top">
+            Top
+        </button>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-light">
+            <div class="container-fluid ps-5">
+                <a class="navbar-brand pe-5 fs-4"> Store </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-5">
+                            <a class="nav-link active fs-6" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-5">
+                            <a class="nav-link fs-6" href="./About.html">About</a>
+                        </li>
+
+                        <li class="nav-item px-5">
+                            <a class="nav-link fs-6" href="./Contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item cart">
+                            <a class="nav-link">
+                                <i class="fa-solid fa-cart-shopping"><span id="counter"></span>
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="container">
+        <div class="row sec2 py-5">
+            <h4 class="pb-1">All Woman needs !</h4>
+            <div class="col-lg-4 col-sm-12 pb-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+                consequatur, natus exercitationem culpa at quae sunt, possimus
+                explicabo id, beatae quibusdam recusandae veritatis sapiente.
+                Consectetur id voluptates repudiandae qui mollitia!
+                <hr />
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <img class="MakeUp" src="./images/MakeUp.jpeg" width="250px" />
+            </div>
+        </div>
+        <div class="row ps-5">
+            <div class="col-lg-6 col-sm-12 ps-5">
+                <img class="accssisories" src="./images/acc.webp" width="250px" />
+            </div>
+            <div class="col-lg-6 col-sm-12 pt-3">
+                <h4 class="pb-1">Everything you dream of ..</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minus
+                reprehenderit perspiciatis dignissimos veniam quas laboriosam id
+                molestiae expedita consectetur quae inventore consequuntur cumque sed,
+                tenetur laudantium ex quod aliquid. Quisquam eius minima explicabo
+                voluptatum ab, quibusdam omnis nobis, tempora eveniet voluptatibus
+                accusantium consequatur eos quos reiciendis eligendi beatae
+                repellendus quam quia. Molestiae corporis, at laborum sit laboriosam
+                consequuntur qui ipsa aliquid ratione incidunt repellat, soluta
+                repellendus provident, quae officiis voluptates magnam odio?
+                Asperiores quam labore obcaecati pariatur harum nesciunt repudiandae,
+                atque corporis fugit aliquam delectus placeat numquam voluptate id
+                voluptatum voluptates fuga ipsam natus impedit officia eveniet sequi
+                aut vero.
+                <hr />
+            </div>
+        </div>
+
+        <div class="row col-lg-10 d-flex justify-content-center category">
+            <div class="col-lg-5 img-category">
+                <img src="./images/clothes.jpg" width="80%" />
+            </div>
+            <div class="col-lg-5 img-category">
+                <img src="./images/wedding-shoes-rings.jpg" width="80%" />
+            </div>
+        </div>
+        <div class="row col-lg-10 d-flex pb-5 justify-content-center category">
+            <div class="col-lg-5 img-category">
+                <img src="./images/17998316_Logo_Mockup_Luxury_Bag.jpg" width="80%" />
+            </div>
+            <div class="col-lg-5 img-category">
+                <img src="./images/closeup-shot-female-wearing-beautiful-silver-necklace-with-pendant.jpg"
+                    width="80% " />
+            </div>
+        </div>
+        <hr />
+
+        <div class="row">
+            <h3 class="text-center">categories</h3>
+            <div class="btn-toolbar" id="myBtnContainer">
+                <button class="btn btn-light filter-btn px-4 me-3 mb-3" data-filter=".All">
+                    All Products
+                </button>
+                <button class="btn btn-light filter-btn px-4 me-3 mb-3" data-filter=".Fashion">
+                    Fashion
+                </button>
+                <button class="btn btn-light filter-btn px-4 me-3 mb-3" data-filter=".MakeUp">
+                    MakeUp
+                </button>
+                <button class="btn btn-light filter-btn px-4 me-3 mb-3" data-filter=".Accessories">
+                    Accessories
+                </button>
+                <button class="btn btn-light filter-btn px-4 me-3 mb-3" data-filter=".SkinCare">
+                    Skin Care
+                </button>
+            </div>
+        </div>
+        <div class="row pt-2 products">
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/lips.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Lip stick</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/perfuim.webp" width="75%" />
+                        </div>
+                        <h5 class="py-2 text-center">Coco chanel</h5>
+                        <p class="card-text text-center">Perfuim (make-up)</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 35
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Accessories">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/accses.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Jewelry</h5>
+                        <p class="card-text text-center">Accessories</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 25
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Accessories">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/glasses.webp" width="60%" />
+                        </div>
+                        <h5 class="py-2 text-center">Sun glasses</h5>
+                        <p class="card-text text-center">Accessories</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Accessories">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/jew.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Chain with pendant</h5>
+                        <p class="card-text text-center">Accessories</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 20
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/lipstick.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Red lip stick</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $45
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Fashion">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/bag.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Bag</h5>
+                        <p class="card-text text-center">Fashion</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 17
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Fashion">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/c.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Dress</h5>
+                        <p class="card-text text-center">Fashion</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 55
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Accessories">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/ring.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Ringa set with chain</h5>
+                        <p class="card-text text-center">Accessories</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/per.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Chanel - perfuem</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 35
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All SkinCare">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/body.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Moisturizer</h5>
+                        <p class="card-text text-center">Skin care</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 25
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All SkinCare">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/facial mosterizer.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Vitamin C</h5>
+                        <p class="card-text text-center">Skin care</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All SkinCare">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/lothion.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Body lothion</h5>
+                        <p class="card-text text-center">Skin care</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/coco.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Perfuim</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 21
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All SkinCare">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/seroum.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Serum</h5>
+                        <p class="card-text text-center">Skin care</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Fashion">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/skirts.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Skirt</h5>
+                        <p class="card-text text-center">Fashion</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 45
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Fashion">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/6.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Pullovers</h5>
+                        <p class="card-text text-center">Fashion</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 45
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Fashion">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/dress.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">dress</h5>
+                        <p class="card-text text-center">Fashion</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 35
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All Fashion">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/flowery.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Flowery dress</h5>
+                        <p class="card-text text-center">Fashion</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 45
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/eyeliner.webp" width="78%" />
+                        </div>
+                        <h5 class="py-2 text-center">Eyeliner</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/eyeshadow.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Eyeshadow</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/blusher.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">blusher</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 25
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/mascara.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Mascara</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 20
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/lipglose.webp" width="60%" />
+                        </div>
+                        <h5 class="py-2 text-center">Lip glose</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 15
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/col.webp" width="66%" />
+                        </div>
+                        <h5 class="py-2 text-center">Beauty set</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 45
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All MakeUp">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/perf.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Coco chanel set</h5>
+                        <p class="card-text text-center">make-up</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 55
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All SkinCare">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/care.webp" width="66%" />
+                        </div>
+                        <h5 class="py-2 text-center">Skin care set</h5>
+                        <p class="card-text text-center">Skin care</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 35
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 my-3 All SkinCare">
+                <div class="card">
+                    <div class="card-body ps-3">
+                        <div class="text-center">
+                            <img class="pt-3" src="./images/mask.webp" width="70%" />
+                        </div>
+                        <h5 class="py-2 text-center">Facial Mask</h5>
+                        <p class="card-text text-center">skin care</p>
+                        <span class="price d-flex justify-content-center pb-3">
+                            $ 10
+                        </span>
+                        <a class="text-center"><i
+                                class="fa-solid fa-cart-shopping cart-icon d-flex justify-content-center fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start text-dark mt-5" style="background-color: #f1f1f1">
+        <section class="d-flex justify-content-center p-4 text-white" style="background-color: #f1f1f1">
+            <div>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-black me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">
+                            <img src="./images/new.png" alt="" />
+                        </h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                            omnis.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Alls</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-dark">MakeUp</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Skin Care</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Fashion</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Accessories</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="./index.html" class="text-dark">Home</a>
+                        </p>
+                        <p>
+                            <a href="./About.html" class="text-dark">About</a>
+                        </p>
+                        <p>
+                            <a href="./Contact.html" class="text-dark">Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-dark">Help</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-dark" href=""> toqamohamed iti .Net </a>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

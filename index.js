@@ -1,19 +1,17 @@
 //counter 
 const totalCount = document.getElementById("counter");
-var count = window.localStorage.getItem('totalCount') ||0;
+var count = window.localStorage.getItem('Cart_items') ||0;
 totalCount.innerHTML = count
 let handleIncrement = () => {
   count++;
   totalCount.innerHTML = count;
   localStorage.setItem("Cart_items", count);
-  localStorage.getItem("Cart_items");
 };
-totalCount.innerHTML = localStorage.getItem("Cart_items") ;
 const incrementCount = document.querySelectorAll(".cart-icon");
 incrementCount.forEach((c) => {
   c.addEventListener("click", handleIncrement);
-
 })
+
 //slider
 var arr = ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp"];
 var slider = document.getElementsByClassName("slider")[0];
@@ -79,5 +77,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
